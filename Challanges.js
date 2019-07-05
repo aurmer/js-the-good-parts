@@ -1,11 +1,23 @@
 // Write three binary functions, add, sub, mul that take two numbers and
 // return their sum, difference and product.
+function add(num1,num2) {
+  return num1 + num2
+}
 
+function sub(num1,num2) {
+  return num1 - num2
+}
+
+function mul(num1,num2) {
+  return num1 * num2
+}
 
 
 // Write a function identityf that takes an argument and returns
 // a function that returns that argument:
-
+function identityf(arg) {
+  return function(){ return arg }
+}
 
 
 // Write a function addf that adds from two invocations:
@@ -18,7 +30,7 @@
 
 
 // Write a function curry that takes a binary function
-// and an argument, and returns a function that can take a 
+// and an argument, and returns a function that can take a
 // second argument:
 
 
@@ -57,13 +69,13 @@
 
 
 
-// Write a from function that produces a generator 
+// Write a from function that produces a generator
 // that will produce a series of values:
 
 
 
 // Write a to function that takes a generator and an end
-// value, and returns a generator that will produce numbers 
+// value, and returns a generator that will produce numbers
 // up to that limit:
 
 
@@ -73,7 +85,7 @@
 
 
 
-// Write an element function that takes an array and a 
+// Write an element function that takes an array and a
 // generator and returns a generator that will produce elements
 // from an array:
 
@@ -91,13 +103,13 @@
 
 
 
-// Write a filter function that takes a generator and a 
-// predicate and produces a generator that produces only the 
+// Write a filter function that takes a generator and a
+// predicate and produces a generator that produces only the
 // values approved by the predicate:
 
 
 
-// Write a concat function that takes two generators, 
+// Write a concat function that takes two generators,
 // and produces a generator that combines the sequences:
 
 
@@ -118,7 +130,7 @@
 
 
 
-// Make a revocable function that takes a binary function, 
+// Make a revocable function that takes a binary function,
 // and returns an object containing an invoke function that can
 // invoke the binary function, and a revoke function that disables
 // the invoke function:
@@ -130,7 +142,7 @@
 
 
 
-// Write a function addm that takes two m objects and 
+// Write a function addm that takes two m objects and
 // returns an m object:
 
 
@@ -169,7 +181,7 @@
 
 
 
-// Make a function continuize that takes a unary function, 
+// Make a function continuize that takes a unary function,
 // and returns a function that takes a callback and an
 // argument:
 
@@ -181,6 +193,6 @@
 
 
 
-// Make a function that makes a publish/subscribe object. It 
+// Make a function that makes a publish/subscribe object. It
 // will reliably deliver all publications to all subscribers
 // in the right order:
